@@ -3,17 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>파인애플도서관</title>
   <link rel="stylesheet" href="./index.css">
   <script defer src="./index.js"></script>
 </head>
-<body>
 
-  <h1 id="target">파인애플도서관</h1>
+  <body>
+    <header>
+      <h2>파인애플도서관</h2>
 
-  <button onclick="getBoardInfo()">도서 정보 조회</button>
+      <nav>
+        <a class="active" href="./index.html">홈</a>
+        <a href="./jmenu.html">메뉴</a>
+        <a href="./kabout.html">소개</a>
+      </nav>
+    </header>
 
-  <div id="result-area"></div>
+    <main class="home-main">
 
-</body>
+      <section class="welcome">
+        <h1>월요일이 제일 좋아!</h1>
+        <p>신선한 커피와 디저트, 스펀지송이 준비되어 있습니다.</p>
+        <a href="./jmenu.html">메뉴 보기</a>
+      </section>
+
+      <section class="recommend">
+        <h2>추천 메뉴</h2>
+
+        <div class="image-box">
+
+          <div class="recommend-card">
+            <img src="./lpineapple.avif" alt="파인애플 커피">
+            <h4>파인애플 커피</h4>
+            <p>상큼한 파인애플 커피</p>
+            <strong>5,500원</strong>
+          </div>
+
+          <div class="recommend-card">
+            <img src="./o_pineapple_bread.webp" alt="파인애플빵">
+            <h4>파인애플빵</h4>
+            <p>파인애플 모양의 달콤한 빵</p>
+            <strong>5,500원</strong>
+          </div>
+
+          <div class="recommend-card">
+            <img src="./p_pineapple.jpg" alt="생 파인애플">
+            <h4>생 파인애플</h4>
+            <p>상큼하고 달콤한 파인애플</p>
+            <strong>5,500원</strong>
+          </div>
+
+          <div class="recommend-card">
+            <img src="./q_sponge.webp" alt="스펀지송 인형">
+            <h4>스펀지송 인형</h4>
+            <p>네모바지 스펀지송?</p>
+            <strong>5,500원</strong>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="home-about">
+        <h2>카페 소개</h2>
+
+        <div class="home-about-content">
+          <img src="./r_pineapple_farm.jpg" alt="파인애플 농장">
+
+          <div>
+            <p>파인애플도서관을 소개합니다.</p>
+            <p>영업시간 09:00 ~ 22:00</p>
+
+            <table>
+              <tr>
+                <th>매장 수</th>
+                <th>메뉴 수</th>
+                <th>좌석 수</th>
+              </tr>
+              <tr>
+                <td>3개</td>
+                <td>12개</td>
+                <td>40석</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>파인애플도서관 | 비키니시티 어딘가 | 전화 00-000-0000</p>
+      <p>Copyleft 2026 파인애플도서관</p>
+    </footer>
+
+
+
+
+  </body>
+
 </html>
